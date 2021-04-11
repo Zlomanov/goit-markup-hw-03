@@ -7,6 +7,34 @@
   --button-backround-color: #f5f4fa;
 }
 
+/* Todo Удалить видимые границы блоков */
+/* header,
+section,
+footer,
+nav,
+ul,
+li,
+div {
+  outline: 1px solid red;
+} */
+/* Todo Удалить видимые границы блоков */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: normal;
@@ -14,7 +42,30 @@ body {
   font-size: var(--text-font-size);
 }
 
-.logo {
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.cotainer {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 24px 0;
+}
+
+.header-logo,
+.footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -24,12 +75,16 @@ body {
   color: var(--title-color);
 }
 
+.header-logo {
+  margin-right: 93px;
+}
+
 .logo-first-part {
   color: var(--brand-color);
 }
 
-.list {
-  list-style: none;
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link {

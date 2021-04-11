@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -13,27 +17,35 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo" href="./index.html"
-          ><span class="logo-first-part">Web</span>Studio</a
-        >
-        <ul class="list">
-          <li><a class="nav-link" href="./index.html">Студия</a></li>
-          <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="nav-link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="list">
-        <li>
-          <a class="nav-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+    <header class="header">
+      <div class="cotainer flex align-center justify-between">
+        <nav class="flex align-center">
+          <a class="header-logo" href="./index.html"
+            ><span class="logo-first-part">Web</span>Studio</a
           >
-        </li>
-        <li>
-          <a class="nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          <ul class="flex">
+            <li class="header-item">
+              <a class="nav-link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-item">
+              <a class="nav-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="flex">
+          <li class="header-item">
+            <a class="nav-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-item">
+            <a class="nav-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <!-- *Секция "Эффективные решения для вашего бизнеса" -->
@@ -44,7 +56,7 @@
       <!-- *Секция "Особенности" -->
       <section>
         <h2 class="section-title" hidden>Особенности</h2>
-        <ul class="list">
+        <ul>
           <li>
             <h3 class="features-subtitle">Внимание к деталям</h3>
             <p class="feature">
@@ -78,7 +90,7 @@
       <!-- *Секция "Чем мы занимаемся" -->
       <section>
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list">
+        <ul>
           <li>
             <img
               src="./images/box-01.jpg"
@@ -105,7 +117,7 @@
       <!-- *Секция "Наша команда" -->
       <section>
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
+        <ul>
           <li>
             <img
               src="./images/team-01.jpg"
@@ -146,14 +158,14 @@
       </section>
     </main>
     <footer>
-      <a class="logo" href="./index.html"
+      <a class="footer-logo" href="./index.html"
         ><span class="logo-first-part">Web</span>Studio</a
       >
       <address>
         <p class="footer-contact footer-contact-address">
           г. Киев, пр-т Леси Украинки, 26
         </p>
-        <ul class="list">
+        <ul>
           <li>
             <a class="footer-contact" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
