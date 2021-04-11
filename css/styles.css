@@ -7,17 +7,19 @@
   --button-backround-color: #f5f4fa;
 }
 
-/* Todo Удалить видимые границы блоков */
-/* header,
+/* !Временная разметка элементов */
+header,
 section,
 footer,
 nav,
 ul,
 li,
-div {
+div,
+h1,
+h2,
+h3 {
   outline: 1px solid red;
-} */
-/* Todo Удалить видимые границы блоков */
+}
 
 h1,
 h2,
@@ -54,7 +56,13 @@ body {
   justify-content: space-between;
 }
 
-.cotainer {
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -62,6 +70,7 @@ body {
 
 .header {
   padding: 24px 0;
+  border: 1px solid #ececec;
 }
 
 .header-logo,
@@ -100,19 +109,34 @@ body {
   color: var(--brand-color);
 }
 
+.section {
+  padding: 94px 0;
+}
+
+/* !У секции "Чем мы занимаемся" на макете padding-top=0, что противоречит заданию "B15". Сделал согласно макета */
+.section-actions {
+  padding-bottom: 94px;
+}
+
+.section-hero {
+  text-align: center;
+  background: #2f303a;
+}
+
 .main-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* !Временно установил цвет фона, чтобы заголовок был виден*/
-  background-color: #757575;
   color: #fff;
 }
 
 .button-order {
+  min-width: 200px;
+  padding: 10px 32px;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
@@ -121,9 +145,12 @@ body {
   background-color: var(--brand-color);
   color: var(--hover-color);
   cursor: pointer;
+  border: transparent;
+  border-radius: 4px;
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -132,7 +159,14 @@ body {
   color: var(--title-color);
 }
 
+.features-item:not(:last-child),
+.actions-item:not(:last-child),
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-subtitle {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: var(--text-font-size);
   line-height: 1.14;
@@ -148,7 +182,21 @@ body {
   color: var(--text-color);
 }
 
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.team-item {
+  padding-bottom: 30px;
+  background-color: #fff;
+}
+
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-subtitle {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -165,14 +213,17 @@ body {
   color: var(--text-color);
 }
 
+.footer {
+  padding: 60px 0;
+  background-color: #2f303a;
+}
+
 .footer-contact {
   font-style: normal;
   font-size: var(--text-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  /* !Временно установил цвет фона, чтобы текст был виден*/
-  background-color: #757575;
   color: rgba(255, 255, 255, 0.6);
 }
 
