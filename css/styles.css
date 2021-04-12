@@ -123,7 +123,7 @@ body {
 }
 
 .section-hero {
-kk  text-align: center;
+  text-align: center;
   background: #2f303a;
 }
 
@@ -246,7 +246,7 @@ kk  text-align: center;
 }
 
 .filter-item:not(:last-child) {
-margin-right: 8px;
+  margin-right: 8px;
 }
 
 .filter-btn {
@@ -283,7 +283,7 @@ margin-right: 8px;
 
 .portfolio-item-content {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-subtitle {
@@ -294,4 +294,3 @@ margin-right: 8px;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
-
