@@ -56,6 +56,10 @@ body {
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -237,7 +241,18 @@ kk  text-align: center;
   color: #fff;
 }
 
-.portfolio-filter {
+.filter {
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+margin-right: 8px;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  border: transparent;
+  border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -248,8 +263,8 @@ kk  text-align: center;
   cursor: pointer;
 }
 
-.portfolio-filter:hover,
-.portfolio-filter:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--brand-color);
   color: var(--hover-color);
 }
