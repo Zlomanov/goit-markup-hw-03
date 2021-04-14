@@ -8,7 +8,7 @@
 }
 
 /* !Временная разметка элементов */
-/* header,
+header,
 section,
 footer,
 nav,
@@ -17,9 +17,11 @@ li,
 div,
 h1,
 h2,
-h3 {
+h3,
+p,
+a {
   outline: 1px solid red;
-} */
+}
 
 h1,
 h2,
@@ -123,6 +125,9 @@ body {
 }
 
 .section-hero {
+  width: 1600px;
+  height: 600px;
+  padding: 200px 0;
   text-align: center;
   background: #2f303a;
 }
@@ -178,6 +183,7 @@ body {
 }
 
 .feature {
+  padding-right: 5px;
   font-size: var(--text-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -216,6 +222,7 @@ body {
 }
 
 .footer {
+  width: 1600px;
   padding: 60px 0;
   background-color: #2f303a;
 }
@@ -226,7 +233,9 @@ body {
   color: #fff;
 }
 
-.footer-contact {
+/* !Высота футера больше на 5px. Line-height на макете 21, а в inspect 24 */
+.footer-contact,
+.footer-contact-last {
   display: block;
   margin-bottom: 9px;
   font-style: normal;
@@ -235,6 +244,10 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact-last {
+  margin-bottom: 0px;
 }
 
 .footer-contact-address {
@@ -269,8 +282,7 @@ body {
   color: var(--hover-color);
 }
 
-.portfolio-set {
-  flex-wrap: wrap;
+/* .portfolio-set {
   margin-right: -30px;
   margin-bottom: -30px;
 }
@@ -279,6 +291,24 @@ body {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+} */
+
+.portfolio-set {
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-item:nth-child(n + 7) {
+  margin-bottom: 0px;
 }
 
 .portfolio-item-content {
@@ -293,4 +323,10 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+}
+
+/* !Высота футера больше на 5px. Line-height на макете 24, а в inspect 30 */
+.portfolio-content {
+  font-size: 16px;
+  line-height: 2.25;
 }
