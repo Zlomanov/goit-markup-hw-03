@@ -8,7 +8,7 @@
 }
 
 /* !Временная разметка элементов */
-header,
+/* header,
 section,
 footer,
 nav,
@@ -21,7 +21,7 @@ h3,
 p,
 a {
   outline: 1px solid red;
-}
+} */
 
 h1,
 h2,
