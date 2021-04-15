@@ -126,8 +126,9 @@ body {
 
 .section-hero {
   width: 1600px;
-  height: 600px;
+  min-height: 600px;
   padding: 200px 0;
+  margin: 0 auto;
   text-align: center;
   background: #2f303a;
 }
@@ -223,6 +224,7 @@ body {
 
 .footer {
   width: 1600px;
+  margin: 0 auto;
   padding: 60px 0;
   background-color: #2f303a;
 }
@@ -325,8 +327,7 @@ body {
   color: var(--title-color);
 }
 
-/* !Высота футера больше на 5px. Line-height на макете 24, а в inspect 30 */
 .portfolio-content {
   font-size: 16px;
-  line-height: 2.25;
+  line-height: 1.87;
 }
